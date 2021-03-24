@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgba(243, 243, 243, 0.89);
+    color: #363636;
+    font-weight: 400;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #030363;
+    font-size: 2.9rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 30px;
+    margin-left: 1rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+main .alternative {
+    margin-top: 1rem;
+}
+
+main .alternative span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(2, 1, 1, 0.678);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background:#EE0000;
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+main form input {
+    background: #e2e2e2;
+    width: 300px;
+    height: 45px;
+    padding: 0 0.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    outline: none;
+    color: #363636;
+    font-size: 1rem;
+    border: 1px solid #9c9c9c;
+    border-radius: 16px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 20px;
+    background: #dbdbdb;
+    color: #3f3e3e;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #ee0000;
+    color: white;
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10rem;
+}
+
+section.images img {
+    width: 85%;
+    
+}
+
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(1deg,#daa520, #e2c67f, rgba(243, 243, 243, 0.89), rgba(243, 243, 243, 0.89));
+    clip-path:circle(75% at left 100%);
+    z-index: -1;
+
+}
